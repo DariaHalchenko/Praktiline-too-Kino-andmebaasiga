@@ -76,6 +76,12 @@
     <Compile Include="Registreerimine.Designer.cs">
       <DependentUpon>Registreerimine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table.Designer.cs">
+      <DependentUpon>Table.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Kino.resx">
       <DependentUpon>Kino.cs</DependentUpon>
     </EmbeddedResource>
