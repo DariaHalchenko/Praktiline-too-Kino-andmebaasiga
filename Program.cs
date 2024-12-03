@@ -16,7 +16,7 @@ namespace Praktiline_too_Kino_andmebaasiga
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registreerimine());
+            Application.Run(new Kinolaud());
         }
     }
 }

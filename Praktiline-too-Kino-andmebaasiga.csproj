@@ -76,11 +76,17 @@
     <Compile Include="Registreerimine.Designer.cs">
       <DependentUpon>Registreerimine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Table.cs">
+    <Compile Include="Saal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Table.Designer.cs">
-      <DependentUpon>Table.cs</DependentUpon>
+    <Compile Include="Saal.Designer.cs">
+      <DependentUpon>Saal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kinolaud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kinolaud.Designer.cs">
+      <DependentUpon>Kinolaud.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Kino.resx">
       <DependentUpon>Kino.cs</DependentUpon>
@@ -118,6 +124,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Kino.mdf</DependentUpon>
     </Content>
+    <Content Include="Poster\pilt.jpg" />
     <Content Include="Registr.jpg" />
     <Content Include="Taustal.jpg" />
   </ItemGroup>
@@ -133,5 +140,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

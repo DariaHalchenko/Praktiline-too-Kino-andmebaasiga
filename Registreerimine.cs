@@ -17,8 +17,6 @@ namespace Praktiline_too_Kino_andmebaasiga
         Label lbl1, lbl2, lbl3, lbl4;
         TextBox txt1, txt2, txt3;
         ComboBox rolli_cb;
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\Kino.mdf"";Integrated Security=True");
-        SqlCommand cmd;
 
         public Registreerimine()
         {
@@ -36,6 +34,7 @@ namespace Praktiline_too_Kino_andmebaasiga
             btn1.Size = new Size(171, 52);
             btn1.Location = new Point(200, 339);
             btn1.Font = new Font("Algerian", 18, FontStyle.Italic);
+            btn1.Click += Btn1_Click;
             Controls.Add(btn1);
 
             //Nimi
@@ -105,37 +104,27 @@ namespace Praktiline_too_Kino_andmebaasiga
             rolli_cb.Items.Add("Admin");
             rolli_cb.Items.Add("Klient");
 
-            NaitaAndmed();
-
         }
-        public void NaitaAndmed()
+
+        private void Btn1_Click(object sender, EventArgs e)
         {
-            string nimi = txt1.Text;
-            string email = txt2.Text;
-            string parool = txt3.Text;
-            string rolli = rolli_cb.SelectedItem.ToString();
-
-            conn.Open();
-            cmd = new SqlCommand("INSERT INTO  Registreerimini(Nimi, E-mail, Parool, Rolli) VALUES (@nimi, @email, @parool, @rolli)", conn);
-            cmd.Parameters.AddWithValue("@nimi", nimi);
-            cmd.Parameters.AddWithValue("@email", email);
-            cmd.Parameters.AddWithValue("@parool", parool);
-            cmd.Parameters.AddWithValue("@rolli", rolli);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-
-            // Теперь переходим к соответствующей форме в зависимости от роли
-            if (rolli == "Admin")
+            if (rolli_cb.SelectedItem != null)
             {
-                // Открываем форму Кассы для "müüja"
-                Table table = new Table();
-                table.Show();
-            }
-            else if (rolli == "Klient")
-            {
-                // Открываем основную форму для "omanik" (Form1)
-                Kino kino = new Kino();
-                kino.Show();
+                string rolli = rolli_cb.SelectedItem.ToString();
+
+                // Now, handle the corresponding logic based on the selected role
+                if (rolli == "Admin")
+                {
+                    // Open the "Admin" Table form
+                    Kinolaud table = new Kinolaud();
+                    table.Show();
+                }
+                else if (rolli == "Klient")
+                {
+                    // Open the "Klient" Kino form
+                    Kino kino = new Kino();
+                    kino.Show();
+                }
             }
         }
     }
