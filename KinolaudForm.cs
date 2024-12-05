@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Praktiline_too_Kino_andmebaasiga
 {
-    public partial class Kinolaud : Form
+    public partial class KinolaudForm : Form
     {
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\Kino.mdf"";Integrated Security=True");
         SqlCommand cmd;
@@ -30,7 +30,7 @@ namespace Praktiline_too_Kino_andmebaasiga
         Button uuenda_btn, kustuta_btn, lisa_btn, poster_btn, saal_btn;
         PictureBox poster_pb;
         DataGridView dataGridView;
-        public Kinolaud()
+        public KinolaudForm()
         {
 
             this.Height = 541;
@@ -192,7 +192,7 @@ namespace Praktiline_too_Kino_andmebaasiga
             open.Multiselect = false;
             open.Filter = "Images Files(*.jpeg;*.png;*.bmp;*.jpg)|*.jpeg;*.png;*.bmp;*.jpg";
 
-            if (open.ShowDialog() == DialogResult.OK && filmi_nimetus_txt.Text != null) 
+            if (open.ShowDialog() == DialogResult.OK && filmi_nimetus_txt.Text != null)
             {
                 save = new SaveFileDialog();
                 save.InitialDirectory = Path.GetFullPath(@"..\..\Poster");

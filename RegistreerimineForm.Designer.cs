@@ -1,6 +1,6 @@
 ﻿namespace Praktiline_too_Kino_andmebaasiga
 {
-    partial class KinoForm
+    partial class RegistreerimineForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Kino
+            // Registreerimine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 637);
-            this.Name = "Kino";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Registreerimine";
+            this.Text = "Registreerimine";
             this.ResumeLayout(false);
 
         }
@@ -44,4 +44,3 @@
         #endregion
     }
 }
-

@@ -61,35 +61,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kino.cs">
+    <Compile Include="Kasutajate_tabelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasutajate_tabelForm.Designer.cs">
+      <DependentUpon>Kasutajate_tabelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include=".Designer.cs">
-      <DependentUpon>Kino.cs</DependentUpon>
+      <DependentUpon>KinoForm.cs</DependentUpon>
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauasaalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LauasaalForm.Designer.cs">
+      <DependentUpon>LauasaalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registreerimine.cs">
+    <Compile Include="RegistreerimineForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registreerimine.Designer.cs">
-      <DependentUpon>Registreerimine.cs</DependentUpon>
+    <Compile Include="RegistreerimineForm.Designer.cs">
+      <DependentUpon>RegistreerimineForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Saal.cs">
+    <Compile Include="KinolaudForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Saal.Designer.cs">
-      <DependentUpon>Saal.cs</DependentUpon>
+    <Compile Include="KinolaudForm.Designer.cs">
+      <DependentUpon>KinolaudForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kinolaud.cs">
+    <Compile Include="Seanside_laudForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kinolaud.Designer.cs">
-      <DependentUpon>Kinolaud.cs</DependentUpon>
+    <Compile Include="Seanside_laudForm.Designer.cs">
+      <DependentUpon>Seanside_laudForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Kino.resx">
-      <DependentUpon>Kino.cs</DependentUpon>
+    <Compile Include="TabelidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelidForm.Designer.cs">
+      <DependentUpon>TabelidForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="KinoForm.resx">
+      <DependentUpon>KinoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,8 +118,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registreerimine.resx">
-      <DependentUpon>Registreerimine.cs</DependentUpon>
+    <EmbeddedResource Include="RegistreerimineForm.resx">
+      <DependentUpon>RegistreerimineForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

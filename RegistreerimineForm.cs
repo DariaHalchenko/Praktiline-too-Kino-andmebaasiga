@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace Praktiline_too_Kino_andmebaasiga
 {
-    public partial class Registreerimine : Form
+    public partial class RegistreerimineForm : Form
     {
         Button btn1;
         Label lbl1, lbl2, lbl3, lbl4;
         TextBox txt1, txt2, txt3;
         ComboBox rolli_cb;
 
-        public Registreerimine()
+        public RegistreerimineForm()
         {
             this.Height = 500; 
             this.Width = 600;
@@ -116,13 +116,13 @@ namespace Praktiline_too_Kino_andmebaasiga
                 if (rolli == "Admin")
                 {
                     // Open the "Admin" Table form
-                    Kinolaud table = new Kinolaud();
-                    table.Show();
+                    TabelidForm tabelid = new TabelidForm();
+                    tabelid.Show();
                 }
                 else if (rolli == "Klient")
                 {
                     // Open the "Klient" Kino form
-                    Kino kino = new Kino();
+                    KinoForm kino = new KinoForm();
                     kino.Show();
                 }
             }

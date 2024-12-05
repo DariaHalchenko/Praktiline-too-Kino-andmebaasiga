@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Praktiline_too_Kino_andmebaasiga
 {
-    public partial class Kino : Form
+    public partial class KinoForm : Form
     {
         Button btn1, btn2;
-        public Kino()
+        public KinoForm()
         {
             this.Height = 676; 
             this.Width = 881;
