@@ -74,11 +74,29 @@
       <DependentUpon>KinoForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KohadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KohadForm.Designer.cs">
+      <DependentUpon>KohadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LauasaalForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LauasaalForm.Designer.cs">
       <DependentUpon>LauasaalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PiletidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PiletidForm.Designer.cs">
+      <DependentUpon>PiletidForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PiletiOstmiseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PiletiOstmiseForm.Designer.cs">
+      <DependentUpon>PiletiOstmiseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -27,7 +27,7 @@ namespace Praktiline_too_Kino_andmebaasiga
         Label filmi_nimetus_lbl, aasta_lbl, saal_lbl;
         TextBox filmi_nimetus_txt, aasta_txt;
         ComboBox saal_cb;
-        Button uuenda_btn, kustuta_btn, lisa_btn, poster_btn, saal_btn;
+        Button uuenda_btn, kustuta_btn, lisa_btn, poster_btn;
         PictureBox poster_pb;
         DataGridView dataGridView;
         public KinolaudForm()
@@ -118,15 +118,6 @@ namespace Praktiline_too_Kino_andmebaasiga
             Controls.Add(poster_btn);
             poster_btn.Click += Poster_btn_Click;
 
-            // Button - saal_btn
-            saal_btn = new Button();
-            saal_btn.Font = new Font("Arial", 15, FontStyle.Bold);
-            saal_btn.Location = new Point(35, 230);
-            saal_btn.Size = new Size(226, 40);
-            saal_btn.Text = "Saal tabelisse";
-            Controls.Add(saal_btn);
-            saal_btn.Click += Saal_btn_Click;
-
             // PictureBox - poster_pb
             poster_pb = new PictureBox();
             poster_pb.Location = new Point(515, 26);
@@ -145,11 +136,6 @@ namespace Praktiline_too_Kino_andmebaasiga
 
             NaitaAndmed();
             NaitaSaal();
-        }
-
-        private void Saal_btn_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         public void NaitaAndmed()

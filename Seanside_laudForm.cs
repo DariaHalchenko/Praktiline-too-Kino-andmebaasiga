@@ -159,13 +159,13 @@ namespace Praktiline_too_Kino_andmebaasiga
         public void NaitaSaal()
         {
             conn.Open();
-            cmd = new SqlCommand("SELECT Saal_Id FROM Saal", conn);
+            cmd = new SqlCommand("SELECT Saal_nimetus FROM Saal", conn);
             adapter = new SqlDataAdapter(cmd);
             saalTable = new DataTable();
             adapter.Fill(saalTable);
             foreach (DataRow item in saalTable.Rows)
             {
-                saal_cb.Items.Add(item["Saal_Id"]);
+                saal_cb.Items.Add(item["Saal_nimetus"]);
             }
             conn.Close();
         }
