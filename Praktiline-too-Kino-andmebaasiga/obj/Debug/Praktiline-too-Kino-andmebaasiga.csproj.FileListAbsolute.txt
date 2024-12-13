@@ -1,0 +1,13 @@
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline-too-Kino-andmebaasiga.csproj.AssemblyReference.cache
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline_too_Kino_andmebaasiga.Properties.Resources.resources
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline-too-Kino-andmebaasiga.csproj.GenerateResource.cache
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline-too-Kino-andmebaasiga.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\bin\Debug\Praktiline-too-Kino-andmebaasiga.exe.config
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\bin\Debug\Praktiline-too-Kino-andmebaasiga.exe
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\bin\Debug\Praktiline-too-Kino-andmebaasiga.pdb
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline-too-Kino-andmebaasiga.exe
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline-too-Kino-andmebaasiga.pdb
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\bin\Debug\Kino.mdf
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\bin\Debug\Kino_log.ldf
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline_too_Kino_andmebaasiga.KinoForm.resources
+C:\Users\opilane\source\repos\Daria Halchenko TARpv23\Praktiline-too-Kino-andmebaasiga\obj\Debug\Praktiline_too_Kino_andmebaasiga.RegistreerimineForm.resources
