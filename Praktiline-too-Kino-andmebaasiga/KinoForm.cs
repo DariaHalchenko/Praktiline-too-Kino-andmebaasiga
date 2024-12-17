@@ -132,9 +132,18 @@ namespace Praktiline_too_Kino_andmebaasiga
 
         private void Btn2_Click(object sender, EventArgs e)
         {
-            // Открыть форму с выбором мест
-            PiletiOstmiseForm ticketForm = new PiletiOstmiseForm();
-            ticketForm.Show();
+        // Открываем форму выбора мест
+        PiletiOstmiseForm ticketForm = new PiletiOstmiseForm();
+            if (ticketForm.ShowDialog() == DialogResult.OK)
+            {
+                string selectedSeats = ticketForm.GetSelectedSeats();
+                string movieTitle = "Select Filmi_nimetus * From Kinolaud"; 
+                string posterPath = @"../../Poster"; 
+        
+                // Открываем форму для сохранения и отправки PDF билета
+                PDFAndMailForm pdfAndMailForm = new PDFAndMailForm(posterPath, movieTitle, selectedSeats);
+                pdfAndMailForm.Show();
+            }    
         }
     }
 }
